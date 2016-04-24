@@ -98,6 +98,8 @@ def wait_for_message(letter):
             else:
                 message_id = send_message(lisa_id, letter)
             f = not f
+			
+			now = time.time()
 
 def parse_message(message):
     """Парсинг сообщения, получение регулярного выражения для поиска по словарю"""
